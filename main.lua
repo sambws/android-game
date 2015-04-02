@@ -21,13 +21,12 @@ room = ""
 
 --define instances that can be accessed by all in a nice way (NAMES MUST BE SUPER UNIQUE!!!)
 g_instances = {
-	db = dragbox:new(0, 0)
+	
 }
 
 function love.load()
 	changeRoom("first")
 
-	create_ent(g_instances.db)
 end
 
 function love.update(dt)
@@ -38,11 +37,11 @@ function love.draw()
 	drawEnts() --draw the ents
 
 	--print the coordinates of each tap
-	font = love.graphics.newFont(48)
-	love.graphics.setFont(font)
-	love.graphics.print(cx .. ", " .. cy, 100, 100)
-	love.graphics.print(ents[1].w, 100, 200)
-	love.graphics.print(room, 1000, 300)
+	--font = love.graphics.newFont(48)
+	--love.graphics.setFont(font)
+	--love.graphics.print(cx .. ", " .. cy, 100, 100)
+	--love.graphics.print(ents[1].w, 100, 200)
+	--love.graphics.print(room, 1000, 300)
 end
 
 function love.touchmoved(id, x, y, pressure)
@@ -74,14 +73,7 @@ function changeRoom( rm )
 
 	--room stuff
 	if rm == "first" then
-		spawn_ent("ok1", ok1, ok, 100, 200)
-		spawn_ent("ok2", ok2, ok, 200, 200)
-		spawn_ent("ok3", ok3, ok, 300, 200)
-		spawn_ent("cool_box", cool_box, coolerbox, 500, 500)
-		spawn_ent("cooler_box", cooler_box, coolerbox, 100, 500)
-		spawn_ent("ok4", ok4, ok, 400, 200)
-		spawn_ent("button1", button1, button, 400, 300)
-
+		
 	elseif rm == "second" then
 	end
 end
