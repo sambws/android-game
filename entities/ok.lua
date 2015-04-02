@@ -1,4 +1,4 @@
-require 'bases'
+require 'entities.bases'
 
 ok = Entity:extend("ok")
 

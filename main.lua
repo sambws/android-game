@@ -10,7 +10,7 @@
 
 require 'utils'
 require 'entities'
-class = require '30log'
+class = require 'lib.30log'
 
 --x and y position of the finger
 cx = 0
@@ -122,4 +122,4 @@ function changeRoom( rm )
 	end
 end
 
-require("LADS").hook()
+require("lib.LADS").hook()

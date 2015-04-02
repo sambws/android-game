@@ -1,4 +1,4 @@
-require 'bases'
+require 'entities.bases'
 
 button = Entity:extend("button")
 button.w = 64 * scale

@@ -1,4 +1,4 @@
-require 'bases'
+require 'entities.bases'
 
 dragbox = Entity:extend("dragbox")
 dragbox.w = 64 * scale

@@ -1,4 +1,4 @@
-class = require '30log'
+class = require 'lib.30log'
 
 --base ent class
 Entity = class("Entity")

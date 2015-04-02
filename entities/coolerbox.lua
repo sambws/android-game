@@ -1,4 +1,4 @@
-require 'bases'
+require 'entities.bases'
 
 coolerbox = Entity:extend("coolerbox")
 coolerbox.w = 64 * scale
