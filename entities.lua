@@ -1,11 +1,10 @@
 ents = {}
 path = "entities/"
 
---optimize this later; maybe make it so that every file in the folder is required
-require(path .. "dragbox") --var table is "playertwo"
-require(path .. "ok")
-require(path .. "coolerbox")
-require(path .. "button")
+require 'lib.require'
+
+--require all entities
+require.tree(path)
 
 --create
 function create_ent(obj)
