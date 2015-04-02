@@ -1,6 +1,7 @@
 # my stuff
 *.bat
-concepts
+notes
+
 
 # Compiled Lua sources
 luac.out

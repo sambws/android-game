@@ -20,7 +20,7 @@ end
 
 function button:tap(id, x, y, pressure)
 	if checkTouch( x, y, self ) then
-		g = g / 2
+		g = g / 3
 	end
 end
 
