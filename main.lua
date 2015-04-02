@@ -3,7 +3,6 @@
 --[[
 
 	TODO:
-	overhaul the entity system so it encorporates an actual class library (for instantiating/parents)
 	comment comment comment
 
 ]]
