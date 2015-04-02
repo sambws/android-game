@@ -73,7 +73,7 @@ function changeRoom( rm )
 
 	--room stuff
 	if rm == "first" then
-		
+		spawn_ent("mech1", mech1, mech, 0, 0)
 	elseif rm == "second" then
 	end
 end

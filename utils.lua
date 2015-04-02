@@ -1,4 +1,6 @@
 --temporary; once i learn an equation for getting the correct x and y values for taps in coordination with love.graphics.scale, we'll use that instead
+--dimensions: 1080 x 1920 (w/h)
+--landscape: 1920 x 1080
 
 --MAKE SURE THIS IS SET WHEN YOU COMPILE!!!!
 phone = false
