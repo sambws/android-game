@@ -5,3 +5,5 @@ this uses:
 30log (for classes)  
 LADS (for emulation)  
 require.lua (for convienence)
+##TODO:
+garbage desposal from the ents table (after deletion of entity)
