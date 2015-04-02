@@ -24,7 +24,6 @@ luac.out
 *.pch
 
 # Libraries
-*.lib
 *.a
 *.la
 *.lo
@@ -35,7 +34,6 @@ luac.out
 *.dll
 *.so
 *.so.*
-*.dylib
 
 # Executables
 *.exe
