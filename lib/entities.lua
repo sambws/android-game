@@ -83,8 +83,17 @@ function wipeEnts()
 	end
 end
 
---create a local entity and add it straight to the table
+--this function will create a basic entity (one that has no extra arguments) and add it to the game world
 function spawn_ent(name, obj, class, x, y)
 	local obj = class:new(x, y, name)
 	create_ent(obj)
+end
+
+--search the table for a specific entity
+function search_ent(name)
+	for i,e in pairs(ents) do
+		if e.name == name then
+			return e
+		end
+	end
 end

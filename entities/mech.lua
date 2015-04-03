@@ -1,22 +1,32 @@
 require 'entities.bases'
 
-mech = Entity:extend("mech")
+mech = class('mech', c_mech)
 mech.w = 64 * scale
 mech.h = 64 * scale
 mech.persistent = false
 
-local move = false  
+mech.r, mech.g, mech.b = 0, 0, 0
 
 function mech:load()
+	--choose color based on mech type
+	if self.type == "lancer" then
+		self.r = 255
+		self.g = 0
+		self.b = 0
+	elseif self.type == "gunner" then
+		self.r = 0
+		self.g = 0
+		self.b = 255
+	end
+
+	print(pilot[self.id])
 end
 
-function mech:update()
-	if move then
-		self.x = self.x + 10
-	end
+function mech:update(dt)
 end
 
 function mech:draw()
+	love.graphics.setColor(self.r, self.g, self.b)
 	love.graphics.rectangle("fill", self.x, self.y, self.w, self.h)
 end
 
@@ -27,7 +37,6 @@ end
 
 function mech:released(id, x, y, pressure)
 	if checkTouch( x, y, self ) then
-		move = true
 	end
 end
 

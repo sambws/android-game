@@ -5,13 +5,12 @@ function love.conf(t)
 	t.author            = "sambws"
 	t.identity          = "android_test"
 	t.release           = true
+	t.window.vsync = true
 
 	t.window.fullscreen = false
 	
-	if phone == false then
-		t.window.width = 480
-		t.window.height = 270
-	end
+	t.window.width = 480 * scale
+	t.window.height = 270 * scale
 
 	t.console = true
 end
